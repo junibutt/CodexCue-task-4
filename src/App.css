@@ -1,0 +1,128 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+
+.shopping-card {
+  justify-content: space-between;
+  background-color: #b4e4ef;
+  padding: 20px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-bottom: 20px; 
+}
+
+
+.product-item {
+  flex: 0 1 calc(30% - 20px);
+  margin: 10px; 
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.product-item:hover {
+  transform: scale(1.02); 
+}
+
+.product-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Cart Item Styles */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.cart-item img {
+  width: 40px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.cart-item span {
+  flex-grow: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+
+.total {
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.header-cart{
+  cursor: pointer;
+}
+
+.search-bar {
+  flex-grow: 1; 
+  max-width: 300px; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  border-radius: 20px; 
+  margin: 0 20px; 
+  font-size: 16px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+  transition: border-color 0.3s; }
+
+.search-bar:focus {
+  outline: none; 
+  border-color: #61dafb; 
+}
+
+
+@media (max-width: 768px) {
+  .product-item {
+    flex: 0 1 calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    flex: 0 1 100%; 
+  }
+}
